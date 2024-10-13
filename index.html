@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page with Speech Input</title>
+  <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Depression Detector</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <!---<a href="login.html">Login</a>
+    <a href="register.html">Register</a>----->
+    <a href="Register1.html">Login/Register</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Welcome to the Speech Input Demo!</h2>
+
+    <!-- Speech Input Section -->
+    <div class="speech-container">
+      <button onclick="startRecording()">Start Speech Recording</button>
+      <button onclick="stopRecording()" disabled>Stop Speech Recording</button>
+      <p class="transcript" id="transcript">Your speech will appear here...</p>
+      <audio controls id="audio-playback"></audio>
+      <a id="download-link" style="display: none;">Download Recording</a>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
+
+
